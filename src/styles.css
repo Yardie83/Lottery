@@ -1,0 +1,248 @@
+* {
+    -fx-myColor: #ffc1bc;
+
+}
+
+* {
+    -fx-myColor2: linear-gradient(#ffffff 10%, #ffb993 60%, #ff9970 100%);
+}
+
+.root {
+    -fx-background-image: url('heini-sutter-bg.jpg');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: derive(maroon, 20%);
+}
+
+.toggle-button {
+    -fx-background-color: #f8fdff;
+    -fx-border-width: 1px;
+    -fx-border-color: #c6cacc;
+    -fx-font-size: 14px;
+    -fx-text-fill: brown;
+    -fx-font-weight: bold;
+
+}
+
+.toggle-button:selected {
+    -fx-background-color: #0012c9;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #ffd5d0;
+    -fx-font-weight: bold;
+
+}
+
+.luckyButton {
+    -fx-background-color: #fff1d7;
+    -fx-background-radius: 90px;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b47843;
+    -fx-border-radius: 90px;
+}
+
+.luckyButton:selected {
+    -fx-background-color: #ffec99;
+    -fx-text-fill: #5e3728;
+    -fx-font-weight: bold;
+    -fx-background-radius: 90px;
+    -fx-border-radius: 90px;
+}
+
+.luckyButton:pressed {
+    -fx-background-color: #ffec99;
+    -fx-text-fill: #5e3728;
+    -fx-font-weight: bold;
+    -fx-background-radius: 90px;
+    -fx-border-radius: 90px;
+}
+
+.luckyButton:hover {
+    -fx-background-color: #fff6bb;
+    -fx-background-radius: 90px;
+    -fx-border-radius: 90px;
+    -fx-font-weight: bold;
+}
+
+.myChoiceHBox {
+    -fx-border-color: transparent;
+    -fx-spacing: 0, 0, 0, 50;
+    -fx-content-display: center;
+    -fx-alignment: center-left;
+}
+
+.myChoiceHBox:hover {
+    -fx-background-color: #bc6160;
+    -fx-background-radius: 90px;
+    -fx-border-radius: 90px;
+    -fx-effect: dropshadow(one-pass-box, #2d2d2d, 3, 0, 1, 2);
+}
+
+.myChoiceHBox-inactive {
+    -fx-border-color: transparent;
+    -fx-spacing: 0, 0, 0, 50;
+    -fx-content-display: center;
+    -fx-alignment: center-left;
+}
+
+.myChoiceHBox-inactive:hover {
+    -fx-background-color: transparent;
+}
+
+#myChoiceHBox-active {
+    -fx-background-color: #bc6160;
+    -fx-border-radius: 90px;
+    -fx-background-radius: 90px;
+}
+
+.label {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+}
+
+.myNumberLbl {
+    -fx-background-color: antiquewhite;
+    -fx-border-color: #bc6160;
+    -fx-border-width: 3px;
+}
+
+.myNumberLbl:hover {
+    -fx-border-color: #bc6160;
+}
+
+.myLuckyNumberLbl {
+    -fx-border-color: transparent;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-background-color: -fx-myColor2;
+    -fx-effect: dropshadow(one-pass-box, #2d2d2d, 3, 0, 1, 2);
+    -fx-translate-x: 10px;
+}
+
+#trashCan {
+    -fx-graphic: url("trash.png");
+    -fx-background-color: #a52a2a;
+    -fx-translate-x: 30px;
+}
+
+#trashCan:pressed {
+    -fx-background-color: #a51515;
+}
+
+#randomBtn {
+    -fx-effect: dropshadow(gaussian, #262423, 1, 0.5, 1, 1);
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#randomBtn:hover {
+    -fx-background-color: linear-gradient(#3b3a37 0%, #272629 20%, #111111 100%);
+    -fx-effect: dropshadow(gaussian, #3f3e3b, 1, 0.8, 0, 0);
+    -fx-border-insets: 0 0 -1 0, 0, 1;
+}
+
+#randomBtn:pressed {
+    -fx-effect: dropshadow(three-pass-box, #2f2b2d, 6, 0.2, 0, -2);
+    -fx-background-color: linear-gradient(#111111 0%, #272629 80%, #3b3a37 100%);
+    -fx-background-insets: 0, 0, -2, 0;
+
+}
+
+#playLotteryPane {
+    -fx-background-color: #ffd0b1;
+    -fx-max-width: 275;
+    -fx-translate-x: 30;
+    -fx-translate-y: 200;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(one-pass-box, #ffd0b2, 2, 1, 0, 0);
+}
+
+#nrOfTipsLbl {
+    -fx-font-size: 14px;
+    -fx-pref-width: 40px;
+    -fx-alignment: center-right;
+}
+
+#tipsTextLbl {
+    -fx-pref-width: 150px;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+#totalPriceLbl {
+    -fx-font-size: 14px;
+    -fx-pref-width: 80px;
+    -fx-alignment: center-left;
+}
+
+#playBtn, #backButton {
+    -fx-translate-x: 207px;
+    -fx-translate-y: 210px;
+    -fx-pref-width: 100px;
+    -fx-background-color: -fx-myColor2;
+    -fx-background-insets: 0, 0, -2, 0;
+    -fx-background-radius: 5, 5, 5, 10;
+    -fx-border-radius: 5, 5, 5, 10;
+    -fx-padding: 7 30 7 30;
+    -fx-text-fill: #232122;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#playBtn:pressed, #backButton:pressed {
+    -fx-background-color: -fx-myColor2;
+    -fx-effect: dropshadow(one-pass-box, #4e0300, 3, 0, 0, -2);
+    -fx-border-radius: 5, 5, 5, 10;
+    -fx-background-radius: 5, 5, 5, 10;
+    -fx-text-fill: #e5e5e5;
+}
+
+#backButton {
+    -fx-pref-width: 120px;
+    -fx-translate-y: 50px;
+}
+
+#lotteryPane {
+    -fx-background-color: blue;
+}
+
+.drawLabels {
+    -fx-border-color: transparent;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-background-color: antiquewhite;
+    -fx-translate-x: 10px;
+    -fx-effect: dropshadow(one-pass-box, #2d2d2d, 3, 0, 1, 2);
+}
+
+#drawLuckyNumber {
+    -fx-background-color: -fx-myColor2;
+
+}
+
+#oddsTitleLbl{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-content-display: left;
+    -fx-alignment: center-left;
+}
+
+.oddsLabel{
+    -fx-pref-width: 150px;
+    -fx-content-display: left;
+    -fx-alignment: center-left;
+}
